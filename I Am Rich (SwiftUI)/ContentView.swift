@@ -10,7 +10,16 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack {
-            Color(.darkGray).ignoresSafeArea(edges: .all).opacity(0.7)
+            Color(.systemTeal).ignoresSafeArea(edges: .all).opacity(0.7)
+            VStack{
+                Text("I Am Rich")
+                    .font(.system(size: 40, weight: .bold, design: .default))
+                    .foregroundColor(.white)
+                  
+                Image("diamond")
+                    .resizable().aspectRatio(contentMode: .fill)
+                    .frame(width: 270, height: 270)
+            }
             
         }
     }
